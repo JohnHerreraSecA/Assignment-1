@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-image: url('https://img.freepik.com/premium-photo/vintage-compass-camera-map-travel-planning_51665-892.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Keyframes for drop-down effect */
+@keyframes dropDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+/* Styling for section */
+section {
+text-align: center;  
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000;
+    animation: dropDown 1s ease-out; /* Applying animation */
+}
+
+section p {
+  line-height: 1.6;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: 150px; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s;
+}
+
+.image-gallery img:nth-child(odd) {
+  transform: rotate(30deg);
+}
+
+.image-gallery img:nth-child(even) {
+  transform: rotate(-30deg);
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
